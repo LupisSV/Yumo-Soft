@@ -3,8 +3,19 @@
     padding: 0;
 }
 
+.valores{
+    background-image: url(img/fondo_valores.jpg);   
+}
 
+.valores_general{
+    background-color: rgba(255,255,255,.8);
 
+}
+
+.valores__texto{
+    text-align: center;
+    font-weight: bold;
+}
 
 .footer__menu{
     padding: 45px;
@@ -72,7 +83,10 @@ table{
 
 header{
     background-color: #404D95; 
-    padding: 30px;
+    font-family: 'Arimo', sans-serif !important;
+    /* height: 90px; */
+    /* padding: 30px;
+    padding-bottom: 5px; */
 }
 
 span{
@@ -86,6 +100,10 @@ ul li{
     line-height: 1.6;
     list-style-type: none;
     
+}
+
+ul li a{
+    font-family: 'Arimo', sans-serif !important;
 }
 
 .contacto{
@@ -108,9 +126,9 @@ ul li{
     width: 100%;
 }
 
-.contacto__formulario{
+/* .contacto__formulario{
     margin-top: 25px;
-}
+} */
 
 /* .contacto__mapa{
     margin-left: 25px;
@@ -212,7 +230,7 @@ footer{
     padding-top: 30px; 
 }
 
-header nav ul{
+/* header nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +242,7 @@ nav img {
     z-index: 5;
     padding-left: 15px;
     padding-top:5px;
-  }
+  } */
 
 .lista{
     text-decoration: none;
@@ -512,11 +530,17 @@ nav img {
 .testimonios__cliente3{
     margin: 10px;
 }
+@media screen and (max-width: 1279px) {
+    .navbar{
+        justify-content: flex-end;
+    }
+}
+
 
 @media screen and (max-width: 768px){
-    header nav ul{
+    /* header nav ul{
         flex-direction: column;
-    }
+    } */
     .slider__texto{
         display: none;
     }
