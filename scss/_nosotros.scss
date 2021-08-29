@@ -1,0 +1,46 @@
+/* PÁGINA NOSOTROS */
+.nosotros{
+    padding: 30px;
+    background-color: #ffffdf;
+}
+
+.ellas__article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "imagen1 imagen2" "video video";
+    padding: 30px;
+    justify-items: center;
+    align-items: center;  
+}
+
+.ellas h3{
+    color: $colorPrincipal;
+}
+
+.ellas__moca{
+    grid-area: imagen1;
+    text-align: center;
+    justify-self: center;
+}
+
+.ellas__yuri{
+    grid-area: imagen2;
+    text-align: center;
+    justify-self: center;
+}
+
+.ellas__video{
+    grid-area: video;
+    margin: 20px;
+    
+    iframe{
+        width: 500px;
+        height: 250px;
+    }
+}
+
+/* .ellas__video iframe{
+    width: 500px;
+    height: 250px;
+} */

@@ -1,0 +1,64 @@
+/* PÁGINA Y SECCIÓN PAQUETES */
+.paquete{
+    padding-top:20px;
+    border-top: 5px dashed $colorVerde;
+    border-bottom: 5px dashed $colorVerde;
+    border-left: 5px dashed $colorVerde;
+    border-right: 5px dashed $colorVerde; 
+    border-radius: 25px;
+    margin:30px;
+}
+
+
+.paquete__article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.paquete article{
+    margin: 0 100px;
+    text-align: center;
+}
+
+/* CSS relacionado al paquete 1 */
+#paquete__paquete1{
+    color: $colorHuella1;
+    padding: 20px;
+    line-height: 1.6;
+    
+    ul li{
+        color:$colorPaquetes;
+        font-family: 'Mali', cursive;
+        font-size: 100%;
+    }
+}
+
+
+/* CSS relacionado al paquete 2 */
+#paquete__paquete2{
+    color: $colorHuella2;
+    padding: 20px;
+    line-height: 1.6;
+
+    ul li{
+        color:$colorPaquetes;
+        font-family: 'Mali', cursive;
+    }
+}
+
+
+/* CSS relacionado al paquete 3 */
+#paquete__paquete3{
+    color:$colorHuella3;
+    padding: 20px;
+    line-height: 1.6;
+
+    ul li{
+        color:$colorPaquetes;
+        font-family: 'Mali', cursive;
+    }
+}
+

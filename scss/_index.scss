@@ -1,0 +1,52 @@
+/* Sección de valores */
+.valores{
+    background-image: url(img/fondo_valores.jpg);   
+}
+
+.valores_general{
+    background-color: rgba(255,255,255,.8);
+
+}
+
+.valores__texto{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sección de Servicios */
+
+.servicios{
+    background-color:#ffffdf;
+    padding:40px;
+}
+
+.servicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 40px;
+}
+
+.servicios--conFondo{
+    
+    background-color: #ffffdf;
+}
+
+#servicio1{
+    text-align: center;
+    color: $colorHuella1;
+    margin:20px;
+}
+
+#servicio2{
+    text-align: center;
+    color: $colorHuella2;
+    margin:20px;
+}
+
+#servicio3{
+    text-align: center;
+    color:$colorHuella3;
+    margin:20px;
+}

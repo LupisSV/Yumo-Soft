@@ -1,0 +1,68 @@
+/* Formato de botones */
+.boton{
+  /*   background-color: $colorHuella3; */
+    color: white;
+    padding: 13px 31px 13px 31px !important;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    font-weight: 600 !important;
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all ease .2s;
+   /*  border-color: $colorHuella3; */
+    cursor: pointer;
+    transition: all 2s; 
+}
+
+.boton--naranja{
+    @extend .boton;
+    background-color: $colorHuella1;
+    color: white;
+    border-color: $colorHuella1;
+    margin:15px;
+}
+
+.boton--naranja:hover{
+    background-color: $colorBotonHN;
+}
+
+.boton--azul{
+    @extend .boton;
+    background-color:$colorHuella2;
+    color: white;
+    border-color: $colorHuella2;
+    margin:15px;
+}
+
+.boton--azul:hover{
+    background-color: $colorBotonHA;
+}
+
+.boton--rosa{
+    @extend .boton;
+    background-color:$colorHuella3;
+    color: white;
+    border-color: $colorHuella3;
+    margin:15px;
+}
+
+.boton--rosa:hover{
+    background-color: $colorBotonHR;
+}
+
+.boton--centrado{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boton-formulario{
+    @extend .boton;
+    background-color: $colorHuella3;
+    border-color: $colorHuella3;
+}

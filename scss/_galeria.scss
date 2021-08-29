@@ -1,0 +1,64 @@
+/* PÁGINA GALERÍA */
+.galeria{
+    background-image: linear-gradient(to top, $colorVerde , #d0f5e3);
+
+ }
+
+.galeria__imagenes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    
+    grid-gap: 1em;
+    margin: 50px;
+    
+}
+
+.galeria__imagen img{
+    width: 100%;
+}
+
+/* Sección testimonios */
+
+.testimonios{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 50px; 
+
+    h3{
+        color:$colorPrincipal;
+        text-align: center;
+    }
+
+    p{
+        color: $colorParrafos;
+        font-weight: bold;
+    }
+}
+
+/* .testimonios h3{
+    color:$colorPrincipal;
+    text-align: center;
+} */
+
+/* .testimonios p{
+    color: $colorParrafos;
+    font-weight: bold;
+} */
+
+.testimonios__cliente1{
+    margin: 10px;
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; /* don't forget to set a duration! */
+}
+
+.testimonios__cliente2{
+    margin: 10px;
+}
+
+.testimonios__cliente3{
+    margin: 10px;
+}
