@@ -1,6 +1,5 @@
 /* Formato de botones */
 .boton{
-  /*   background-color: $colorHuella3; */
     color: white;
     padding: 13px 31px 13px 31px !important;
     display: inline-block;
@@ -15,7 +14,6 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: all ease .2s;
-   /*  border-color: $colorHuella3; */
     cursor: pointer;
     transition: all 2s; 
 }

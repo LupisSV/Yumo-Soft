@@ -7,8 +7,12 @@
     border-right: 5px dashed $colorVerde; 
     border-radius: 25px;
     margin:30px;
-}
 
+    article{
+        margin: 0 100px;
+        text-align: center;
+    }
+}
 
 .paquete__article{
     display: flex;
@@ -16,11 +20,6 @@
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
-}
-
-.paquete article{
-    margin: 0 100px;
-    text-align: center;
 }
 
 /* CSS relacionado al paquete 1 */

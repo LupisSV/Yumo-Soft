@@ -41,20 +41,14 @@ fieldset{
     border-color: $colorVerde;
     border-style: dotted;
     color: $colorPrincipal;
-    font-family: 'Chewy', cursive; 
+    font-family:$letraPrincipal; 
 
     label{
-        font-family: 'Mali', cursive;
+        font-family: $letraParrafos;
         font-weight: bold;
         color:$colorParrafos;
     }
 }
-
-/* fieldset label{
-    font-family: 'Mali', cursive;
-    font-weight: bold;
-    color:$colorParrafos;
-} */
 
 label{
     color:$colorParrafos;

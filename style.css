@@ -78,17 +78,12 @@ fieldset {
   border-color: #3EC483;
   border-style: dotted;
   color: #404D95;
-  font-family: 'Chewy', cursive; }
+  font-family: "Chewy", cursive; }
   fieldset label {
-    font-family: 'Mali', cursive;
+    font-family: "Mali", cursive;
     font-weight: bold;
     color: #c69b7c; }
 
-/* fieldset label{
-    font-family: 'Mali', cursive;
-    font-weight: bold;
-    color:$colorParrafos;
-} */
 label {
   color: #c69b7c;
   font-family: 'Arimo', sans-serif; }
@@ -127,10 +122,6 @@ label {
     width: 500px;
     height: 250px; }
 
-/* .ellas__video iframe{
-    width: 500px;
-    height: 250px;
-} */
 /* PÁGINA GALERÍA */
 .galeria {
   background-image: linear-gradient(to top, #3EC483, #d0f5e3); }
@@ -157,14 +148,6 @@ label {
     color: #c69b7c;
     font-weight: bold; }
 
-/* .testimonios h3{
-    color:$colorPrincipal;
-    text-align: center;
-} */
-/* .testimonios p{
-    color: $colorParrafos;
-    font-weight: bold;
-} */
 .testimonios__cliente1 {
   margin: 10px;
   display: inline-block;
@@ -189,6 +172,9 @@ label {
   border-right: 5px dashed #3EC483;
   border-radius: 25px;
   margin: 30px; }
+  .paquete article {
+    margin: 0 100px;
+    text-align: center; }
 
 .paquete__article {
   display: flex;
@@ -196,10 +182,6 @@ label {
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between; }
-
-.paquete article {
-  margin: 0 100px;
-  text-align: center; }
 
 /* CSS relacionado al paquete 1 */
 #paquete__paquete1 {
@@ -231,7 +213,6 @@ label {
 
 /* Formato de botones */
 .boton, .boton--naranja, .boton--azul, .boton--rosa, .boton-formulario {
-  /*   background-color: $colorHuella3; */
   color: white;
   padding: 13px 31px 13px 31px !important;
   display: inline-block;
@@ -246,7 +227,6 @@ label {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: all ease .2s;
-  /*  border-color: $colorHuella3; */
   cursor: pointer;
   transition: all 2s; }
 
