@@ -1,7 +1,7 @@
 {
   "name": "yumo-soft",
   "version": "1.0.0",
-  "description": "",
+  "description": "Yumo-Soft es un software diseñado para veterinarias en el cual se puede llevar un seguimiento de las mascotas",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

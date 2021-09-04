@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Letra Chewy para Encabezados -->
+
+    <!-- Etiquetas Meta -->
+    <meta name="author" content="Monserrat Sandoval">
+    <meta name="keywords" content="paquete perro, paquete gato, paquete tortuga, paquete dinosaurio, paquete yumo, paquete yumo-soft, yumo-soft">
+    <meta name="description" content="LLevar el seguimiento de tu mascota nunca había sido tan fácil, conoce todos los paquetes que tenemos para ti en Yumo-Soft">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
@@ -25,12 +31,11 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="col-12 col-lg-3 text-center">   
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo2.png" height="60px" alt="logo">
-                        </a>
-                </div>     
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo2.png" height="60px" alt="logo">
+                </a>     
             </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="ham_blanca" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>   
             
@@ -53,12 +58,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 col-lg-3 text-center">   
+                <a class="navbar-brand" href="">
+                    <a class="boton-navbar"><i class="fa fa-facebook-square"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-twitter"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-instagram"></i></a>
+                </a>
+            </div>
         </nav>        
     </header>
 
     <section id="paquete">
         <div class="paquete"> 
-            <h2>Nuestros paquetes</h2>  
+            <h1>Nuestros paquetes</h1>  
             <div class="paquete__article">
                 <!-- Paquete 1 -->
                 <article id="paquete__paquete1">
@@ -112,11 +124,47 @@
         </div>
     </section>
 
-    <section>
+    <section class="contenidoPaquetes">
         <h2>¿Qué incluyen nuestros paquetes?</h2>
-        <div>
-
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-tabs nav--centrado" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link nav-link__color active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Dominio</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link nav-link__color" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hosting</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link nav-link__color" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Soporte</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                Todas nuestras páginas realizadas incluyen el dominio de tu veterinaria o estética. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                Tendremos almacenada tu página 24/7, para que tú y tus clientes puedan revisarla al momento que deseen.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                Cualquier duda o problema que tengas, <strong>Yumo-Soft</strong> te ayuda a resolverlos a la brevedad.
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </section>
 
     <!-- Pie de página -->

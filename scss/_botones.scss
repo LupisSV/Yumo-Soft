@@ -18,12 +18,16 @@
     transition: all 2s; 
 }
 
-.boton--naranja{
+@mixin botonesColores ($colorFondo, $colorBorde) {
     @extend .boton;
-    background-color: $colorHuella1;
+    background-color: $colorFondo;
     color: white;
-    border-color: $colorHuella1;
+    border-color: $colorBorde;
     margin:15px;
+}
+
+.boton--naranja{
+    @include botonesColores($colorHuella1,$colorHuella1)
 }
 
 .boton--naranja:hover{
@@ -31,11 +35,7 @@
 }
 
 .boton--azul{
-    @extend .boton;
-    background-color:$colorHuella2;
-    color: white;
-    border-color: $colorHuella2;
-    margin:15px;
+    @include botonesColores($colorHuella2,$colorHuella2)
 }
 
 .boton--azul:hover{
@@ -43,11 +43,7 @@
 }
 
 .boton--rosa{
-    @extend .boton;
-    background-color:$colorHuella3;
-    color: white;
-    border-color: $colorHuella3;
-    margin:15px;
+    @include botonesColores($colorHuella3,$colorHuella3)
 }
 
 .boton--rosa:hover{
@@ -63,4 +59,12 @@
     @extend .boton;
     background-color: $colorHuella3;
     border-color: $colorHuella3;
+}
+
+.boton-navbar{
+    @extend .boton;
+    border-style: none;
+    padding: 0 !important;
+    font-size:x-large;
+    background-color: $colorPrincipal;
 }

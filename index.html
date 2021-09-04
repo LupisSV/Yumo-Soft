@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yumo-Soft | Inicio</title>
     <link rel="icon" href="img/dog.png">    
+
+    <!-- Etiquetas Meta -->
+    <meta name="author" content="Monserrat Sandoval">
+    <meta name="keywords" content="el mejor aliado de tus mascotas, sistema veterinario, cuidado mascotas, seguimiento mascotas, yumo-soft, yumo">
+    <meta name="description" content="Yumo-Soft es el sistema veterinario que te permite llevar el seguimiento de tu mascota, conoce aquí ">
+
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Letra Chewy para Encabezados -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
     
-    <script src="https://use.fontawesome.com/90f808a152.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <!-- Encabezado de la página -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="col-12 col-lg-3 text-center">   
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo2.png" height="60px" alt="logo">
-                        </a>
-                </div>     
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo2.png" height="60px" alt="logo">
+                </a>     
             </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>   
+            <button id="ham_blanca" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>   
             
-            <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">INICIO</a>
@@ -53,6 +56,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 col-lg-3 text-center">   
+                <a class="navbar-brand" href="">
+                    <a class="boton-navbar"><i class="fa fa-facebook-square"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-twitter"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-instagram"></i></a>
+                </a>
+            </div>     
         </nav>        
     </header>
 
@@ -60,13 +70,16 @@
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/slider1.jpg" class="d-block w-100" alt="...">
+        <img src="img/slider1.jpg" class="d-block w-100" alt="Perros felices">
+        <h1>Yumo-Soft</h1>
       </div>
       <div class="carousel-item">
-        <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+        <img src="img/slider2.jpg" class="d-block w-100" alt="Labrador en la playa">
+        <h2>El mejor aliado de tus mascotas</h2>
       </div>
       <div class="carousel-item">
-        <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+        <img src="img/slider3.jpg" class="d-block w-100" alt="Labrador en la lluvia">
+        <h2>Bienvenido</h2>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -80,29 +93,29 @@
   </div>
     
     <section class="valores py-5 val">
-        <div class="valores_general">
+        <div class="valores_general text-center">
             <h2>Nuestros Valores</h2>
-            <div class="container">
+            <div class="container text-center">
                 <div class="row text-center">
                     <div class=" col-sm-12 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/valores_vet.png" alt="Card image cap">
+                        <div class="card" style="width: 80%;">
+                            <img class="card-img-top" src="img/valores_vet.png" alt="Responsabilidad" data-aos="flip-up" style="width: 80%;">
                             <div class="card-body">
                                 <p class="card-text valores__texto">Responsabilidad</p>
                             </div>
                         </div>
                     </div>
                     <div class=" col-sm-12 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/valores_vet2.png" alt="Card image cap">
+                        <div class="card" style="width: 80%;">
+                            <img class="card-img-top" src="img/valores_vet2.png" alt="Amor" data-aos="flip-up" style="width: 80%;">
                             <div class="card-body">
                                 <p class="card-text valores__texto">Amor</p>
                             </div>
                         </div>
                     </div>
                     <div class=" col-sm-12 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/valores_vet3.png" alt="Card image cap">
+                        <div class="card" style="width: 80%;">
+                            <img class="card-img-top" src="img/valores_vet3.png" alt="Compromiso" data-aos="flip-up" style="width: 80%;">
                             <div class="card-body">
                                 <p class="card-text valores__texto">Compromiso</p>
                             </div>
@@ -118,19 +131,19 @@
         <h2>Nuestros Servicios</h2>
         <div class="servicio">
             <!-- Servicio 1 -->
-            <article id="servicio1">
+            <article id="servicio1" data-aos="fade-up" data-aos-duration="3000">
                 <h3>Servicio 1</h3>
                 <img src="img/cuidar.png" alt="cuidado animal">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident officiis illum maxime quidem autem voluptates, earum blanditiis voluptatibus accusantium asperiores possimus praesentium minus sapiente veritatis fuga assumenda recusandae dolor!</p>
             </article>
             <!-- Servicio 2 -->  
-            <article id="servicio2">
+            <article id="servicio2" data-aos="fade-up" data-aos-duration="3000">
                 <h3>Servicio 2</h3>
                 <img src="img/salud.png" alt="salud animal">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In animi ut placeat a accusamus perferendis autem at? Esse temporibus ut voluptates expedita velit, est adipisci illo omnis, libero accusamus ipsa.</p>
             </article>
             <!-- Servicio 3 -->
-            <article id="servicio3">
+            <article id="servicio3" data-aos="fade-up" data-aos-duration="3000">
                 <h3>Servicio 3</h3>
                 <img src="img/veterinario.png" alt="veterinario">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam libero aperiam alias molestiae mollitia dicta inventore corporis cumque numquam modi soluta doloremque ab nobis quaerat placeat, voluptatibus rerum repellat at.</p>
@@ -146,7 +159,7 @@
                 <!-- Paquete 1 -->
                 <article id="paquete__paquete1">
                     <h3>Paquete Perro</h3>
-                    <img src="img/shiba.png" alt="">
+                    <img src="img/shiba.png" alt="paquete perro">
                     <ul class="paquete__huella">
                         <li>Elemento 1</li>
                         <li>Elemento 2</li>
@@ -162,7 +175,7 @@
                 <!-- Paquete 2 -->
                 <article id="paquete__paquete2">
                     <h3>Paquete Gato</h3>
-                    <img src="img/cat.png" alt="">
+                    <img src="img/cat.png" alt="paquete gato">
                     <ul class="paquete__huella">
                         <li>Elemento 1</li>
                         <li>Elemento 2</li>
@@ -178,7 +191,7 @@
                 <!-- Paquete 3 -->
                 <article id="paquete__paquete3">
                     <h3>Paquete tortuga</h3>
-                    <img src="img/turtle.png" alt="">
+                    <img src="img/turtle.png" alt="paquete tortuga">
                     <ul class="paquete__huella">
                         <li>Elemento 1</li>
                         <li>Elemento 2</li>
@@ -207,25 +220,34 @@
             <!-- Formulario -->
             <div class="contacto__formulario">
                 <form class="formulario" action=""> 
-                    <label for="nombre">Nombre(s):</label>
-                    <input type="text" name="nombre" required>
-                    <label for="apellido">Apellidos:</label>
-                    <input type="text" name="apellido" required><br><br>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" for="email" required><br><br>
-                    <label for="asunto">Asunto:</label>
-                    <select name="asunto">
-                        <option value="informes">Informes</option>
-                        <option value="contratar">Contratar paquete</option>
-                        <option value="cotizacion">Cotización</option>
-                        <option value="otros">Otros (Especificar)</option>
-                    </select><br><br>
-                    <label for="mensaje">Escribe tu mensaje:</label><br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>   
-                    
-                    <br><br>
-                    <input class="boton-formulario" type="submit" value="Enviar formulario">
-                    <input class="boton-formulario" type="reset" value="Limpiar formulario">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Nombre completo:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Asunto:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Informes</option>
+                          <option>Contratar paquete</option>
+                          <option>Cotización</option>
+                          <option>Otros(Especificar)</option>
+                          
+                        </select>
+                      </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Escribe tu mensaje:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div> 
+                   
+                    <div class="form-group text-center">
+                        <input class="boton-formulario " type="submit" value="Enviar formulario">
+                    </div>
                 </form>
             </div>
         </div>
@@ -235,7 +257,7 @@
     <footer class="footer">
         <div class="footer__imagen">
             <div class="footer__logo">
-                <img src="img/logo2.png" alt="" height="100">
+                <img src="img/logo2.png" alt="logo" height="100">
                <!--  <h2>Yumo-Soft</h2> -->
             </div>
             <div class="footer__menu">   
@@ -259,5 +281,13 @@
             <p>Todos los derechos reservados. Elaborado por <a href="">Monserrat Sandoval</a></p>
         </div>
     </footer>
+    <script src="https://use.fontawesome.com/90f808a152.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -33,20 +33,27 @@
     background-color: #ffffdf;
 }
 
+$serviciosMapa:(
+    centro:center,
+    margen:20px
+);
+
+@mixin serviciosp ($color){
+    text-align: map-get($serviciosMapa, centro );
+    color: $color;
+    margin: map-get($serviciosMapa, margen );
+}
+
 #servicio1{
-    text-align: center;
-    color: $colorHuella1;
-    margin:20px;
+    @include serviciosp($colorHuella1)
 }
 
 #servicio2{
-    text-align: center;
-    color: $colorHuella2;
-    margin:20px;
+    @include serviciosp($colorHuella2)
 }
 
 #servicio3{
-    text-align: center;
-    color:$colorHuella3;
-    margin:20px;
+    @include serviciosp($colorHuella3)
 }
+
+

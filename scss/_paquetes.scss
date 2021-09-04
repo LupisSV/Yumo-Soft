@@ -22,42 +22,55 @@
     justify-content: space-between;
 }
 
-/* CSS relacionado al paquete 1 */
-#paquete__paquete1{
-    color: $colorHuella1;
+@mixin paquetesp ($color) {
+    color: $color;
     padding: 20px;
     line-height: 1.6;
+}
+
+@mixin listasPaquetes ($color){
+    color:$color;
+    font-family: $letraParrafos;
+}
+
+#paquete__paquete1{
+    @include paquetesp($colorHuella1);
     
     ul li{
-        color:$colorPaquetes;
-        font-family: 'Mali', cursive;
-        font-size: 100%;
+         @include listasPaquetes ($colorPaquetes)
     }
-}
+} 
 
-
-/* CSS relacionado al paquete 2 */
 #paquete__paquete2{
-    color: $colorHuella2;
-    padding: 20px;
-    line-height: 1.6;
-
+    @include paquetesp($colorHuella2);
+    
     ul li{
-        color:$colorPaquetes;
-        font-family: 'Mali', cursive;
+         @include listasPaquetes ($colorPaquetes)
     }
-}
+} 
 
-
-/* CSS relacionado al paquete 3 */
 #paquete__paquete3{
-    color:$colorHuella3;
-    padding: 20px;
-    line-height: 1.6;
-
+    @include paquetesp($colorHuella3);
+    
     ul li{
-        color:$colorPaquetes;
-        font-family: 'Mali', cursive;
+         @include listasPaquetes ($colorPaquetes)
     }
+} 
+
+.nav-link__color{
+    color: $colorPaquetes;    
 }
 
+.nav-link__color:hover{
+    background-color: $colorSubtitulos;
+    color: white;    
+}
+
+.nav--centrado{
+    justify-content: center!important;
+}
+
+.contenidoPaquetes{
+    background-color: #ffffdf;
+    padding: 20px;
+}

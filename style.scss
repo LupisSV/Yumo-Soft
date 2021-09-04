@@ -19,7 +19,7 @@ h1{
     color: $colorPrincipal;
     font-family: $letraPrincipal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -27,7 +27,7 @@ h2{
     color:$colorPrincipal;
     font-family: $letraPrincipal;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     padding-bottom: 15px;
 }
 
@@ -137,6 +137,10 @@ footer{
     font-weight: bold;
 }
 
+#ham_blanca{
+    color:white;
+}
+
 @media screen and (max-width: 1279px) {
     .navbar{
         justify-content: center;
@@ -174,7 +178,7 @@ footer{
 }
 
 @media only screen and (min-width: 768px){
-    #servicio1{
+    /* #servicio1{
         transform: rotate(-10deg);
     }
     
@@ -184,7 +188,7 @@ footer{
     
     #servicio3{
         transform: rotate(10deg);
-    }
+    } */
 
     .paquete__huella{
         list-style-image: url(img/paw.png);
@@ -195,3 +199,4 @@ footer{
     }
     
 }
+

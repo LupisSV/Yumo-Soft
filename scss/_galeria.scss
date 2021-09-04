@@ -1,7 +1,6 @@
 /* PÁGINA GALERÍA */
 .galeria{
     background-image: linear-gradient(to top, $colorVerde , #d0f5e3);
-
  }
 
 .galeria__imagenes{
@@ -24,6 +23,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     margin: 50px; 
+    text-align: center;
 
     h3{
         color:$colorPrincipal;
@@ -34,6 +34,7 @@
         color: $colorParrafos;
         font-weight: bold;
     }
+
 }
 
 .testimonios__cliente1{

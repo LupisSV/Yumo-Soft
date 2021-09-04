@@ -63,16 +63,16 @@
   height: 400px;
   border: 0; }
 
-.contacto--conBorde {
-  padding-top: 20px;
-  padding-left: 60px;
-  border-top: 5px dashed #3EC483;
-  border-bottom: 5px dashed #3EC483;
-  border-left: 5px dashed #3EC483;
-  border-right: 5px dashed #3EC483;
-  border-radius: 25px;
-  margin: 30px; }
-
+/* .contacto--conBorde{
+    padding-top:20px;
+    padding-left: 60px;
+    border-top: 5px dashed $colorVerde;
+    border-bottom: 5px dashed $colorVerde;
+    border-left: 5px dashed $colorVerde;
+    border-right: 5px dashed $colorVerde; 
+    border-radius: 25px;
+    margin:30px;
+} */
 fieldset {
   padding: 10px;
   border-color: #3EC483;
@@ -93,11 +93,19 @@ label {
   padding: 30px;
   background-color: #ffffdf; }
 
+.nosotros__video {
+  /*    grid-area: video; */
+  margin: 20px;
+  text-align: center; }
+  .nosotros__video iframe {
+    width: 500px;
+    height: 250px; }
+
 .ellas__article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "imagen1 imagen2" "video video";
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "imagen1 imagen2";
   padding: 30px;
   justify-items: center;
   align-items: center; }
@@ -115,12 +123,15 @@ label {
   text-align: center;
   justify-self: center; }
 
-.ellas__video {
-  grid-area: video;
-  margin: 20px; }
-  .ellas__video iframe {
-    width: 500px;
-    height: 250px; }
+@media screen and (max-width: 767px) {
+  .ellas__article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "imagen1" "imagen2"; }
+  .nosotros__video iframe {
+    width: 250px;
+    height: 200px; } }
 
 /* PÁGINA GALERÍA */
 .galeria {
@@ -140,7 +151,8 @@ label {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 50px; }
+  margin: 50px;
+  text-align: center; }
   .testimonios h3 {
     color: #404D95;
     text-align: center; }
@@ -183,36 +195,46 @@ label {
   align-content: space-between;
   justify-content: space-between; }
 
-/* CSS relacionado al paquete 1 */
 #paquete__paquete1 {
   color: orange;
   padding: 20px;
   line-height: 1.6; }
   #paquete__paquete1 ul li {
     color: green;
-    font-family: 'Mali', cursive;
-    font-size: 100%; }
+    font-family: "Mali", cursive; }
 
-/* CSS relacionado al paquete 2 */
 #paquete__paquete2 {
   color: #88D9DE;
   padding: 20px;
   line-height: 1.6; }
   #paquete__paquete2 ul li {
     color: green;
-    font-family: 'Mali', cursive; }
+    font-family: "Mali", cursive; }
 
-/* CSS relacionado al paquete 3 */
 #paquete__paquete3 {
   color: #FF66C4;
   padding: 20px;
   line-height: 1.6; }
   #paquete__paquete3 ul li {
     color: green;
-    font-family: 'Mali', cursive; }
+    font-family: "Mali", cursive; }
+
+.nav-link__color {
+  color: green; }
+
+.nav-link__color:hover {
+  background-color: #7ED957;
+  color: white; }
+
+.nav--centrado {
+  justify-content: center !important; }
+
+.contenidoPaquetes {
+  background-color: #ffffdf;
+  padding: 20px; }
 
 /* Formato de botones */
-.boton, .boton--naranja, .boton--azul, .boton--rosa, .boton-formulario {
+.boton, .boton--naranja, .boton--azul, .boton--rosa, .boton-formulario, .boton-navbar {
   color: white;
   padding: 13px 31px 13px 31px !important;
   display: inline-block;
@@ -265,19 +287,25 @@ label {
   background-color: #FF66C4;
   border-color: #FF66C4; }
 
+.boton-navbar {
+  border-style: none;
+  padding: 0 !important;
+  font-size: x-large;
+  background-color: #404D95; }
+
 /* PROPIEDADES GENERALES */
 h1 {
   color: #404D95;
   font-family: "Chewy", cursive;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center; }
 
 h2 {
   color: #404D95;
   font-family: "Chewy", cursive;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   padding-bottom: 15px; }
 
 h3 {
@@ -365,6 +393,9 @@ footer {
   font-family: "Mali", cursive;
   font-weight: bold; }
 
+#ham_blanca {
+  color: white; }
+
 @media screen and (max-width: 1279px) {
   .navbar {
     justify-content: center; } }
@@ -387,12 +418,17 @@ footer {
     flex-direction: column; } }
 
 @media only screen and (min-width: 768px) {
-  #servicio1 {
-    transform: rotate(-10deg); }
-  #servicio2 {
-    transform: rotateX(21deg); }
-  #servicio3 {
-    transform: rotate(10deg); }
+  /* #servicio1{
+        transform: rotate(-10deg);
+    }
+    
+    #servicio2{
+        transform: rotateX(21deg);
+    }
+    
+    #servicio3{
+        transform: rotate(10deg);
+    } */
   .paquete__huella {
     list-style-image: url(img/paw.png); }
   .contacto__general div {

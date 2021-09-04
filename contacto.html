@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yumo-Soft | Contacto</title>
     <link rel="icon" href="img/dog.png">    
+    <!-- Etiquetas Meta -->
+    <meta name="author" content="Monserrat Sandoval">
+    <meta name="keywords" content="contacto yumo-soft, dona yumo-soft, cotiza yumo-soft, yumo-soft">
+    <meta name="description" content="Si quieres información acerca de Yumo-Soft, donar o cotizar algunos de nuestros paquetes, por favor regístrate y en breve te contactáremos.">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Letra Chewy para Encabezados -->
@@ -25,12 +29,11 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="col-12 col-lg-3 text-center">   
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo2.png" height="60px" alt="logo">
-                        </a>
-                </div>     
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo2.png" height="60px" alt="logo">
+                </a>     
             </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="ham_blanca" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>   
             
@@ -53,12 +56,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 col-lg-3 text-center">   
+                <a class="navbar-brand" href="">
+                    <a class="boton-navbar"><i class="fa fa-facebook-square"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-twitter"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-instagram"></i></a>
+                </a>
+            </div>
         </nav>        
     </header>
 
 
     <section class="contacto contacto--conBorde">
-        <h2>Contacto</h2>
+        <h1>Contacto</h1>
         <p>Si quieres información acerca de Yumo-Soft, donar o cotizar algunos de nuestros paquetes, <br>por favor regístrate y en breve te vamos a contactar.</p>
         <div class="contacto__general">
             <!-- Mapa y dirección -->
@@ -68,25 +78,34 @@
             <!-- Formulario -->
             <div class="contacto__formulario">
                 <form class="formulario" action=""> 
-                    <label for="nombre">Nombre(s):</label>
-                    <input type="text" name="nombre" required>
-                    <label for="apellido">Apellidos:</label>
-                    <input type="text" name="apellido" required><br><br>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" for="email" required><br><br>
-                    <label for="asunto">Asunto:</label>
-                    <select name="asunto">
-                        <option value="informes">Informes</option>
-                        <option value="contratar">Contratar paquete</option>
-                        <option value="cotizacion">Cotización</option>
-                        <option value="otros">Otros (Especificar)</option>
-                    </select><br><br>
-                    <label for="mensaje">Escribe tu mensaje:</label><br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>   
-                    
-                    <br><br>
-                    <input class="boton-formulario" type="submit" value="Enviar formulario">
-                    <input class="boton-formulario" type="reset" value="Limpiar formulario">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Nombre completo:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Asunto:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Informes</option>
+                          <option>Contratar paquete</option>
+                          <option>Cotización</option>
+                          <option>Otros(Especificar)</option>
+                          
+                        </select>
+                      </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Escribe tu mensaje:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div> 
+                   
+                    <div class="form-group text-center">
+                        <input class="boton-formulario " type="submit" value="Enviar formulario">
+                    </div>
                 </form>
             </div>
         </div>
@@ -110,10 +129,12 @@
             </div>
             <!-- Formulario para suscribirse y recibir noticias -->
             <div class="footer__suscribirse">
-                <form>
+                <form >
                     <label for="suscribirse">Suscribirse:</label>
                     <input type="suscribirse" class="form-control" id="suscribirse"  placeholder="Escribe tu email">
-                    <button type="submit" class="boton boton-formulario">Enviar</button>
+                    <div class="text-center">
+                        <button type="submit" class="boton boton-formulario">Enviar</button>
+                    </div>
                 </form>
             </div>
         </div>

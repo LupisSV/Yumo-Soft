@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yumo-Soft | Nosotros</title>
-    <link rel="icon" href="img/dog.png">    
+    <link rel="icon" href="img/dog.png">
+    
+    <!-- Etiquetas Meta -->
+    <meta name="author" content="Monserrat Sandoval">
+    <meta name="keywords" content="perro labrador, perro maltes, moca, yuri, yumo-soft, yumo">
+    <meta name="description" content="Yumo-Soft es un sistema para el seguimiento de tu mascota, conoce aquí más de nosotros ">
+
+
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Letra Chewy para Encabezados -->
@@ -25,12 +32,11 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="col-12 col-lg-3 text-center">   
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo2.png" height="60px" alt="logo">
-                        </a>
-                </div>     
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo2.png" height="60px" alt="logo">
+                </a> 
             </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="ham_blanca" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>   
             
@@ -53,21 +59,30 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="col-12 col-lg-3 text-center">   
+                <a class="navbar-brand" href="">
+                    <a class="boton-navbar"><i class="fa fa-facebook-square"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-twitter"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-instagram"></i></a>
+                </a>
+            </div>
         </nav>        
         
     </header>
 
     <!-- Sección principal de nosotros -->
     <section class="nosotros">
-        <h2>Yumo-Soft</h2>
         <h1>Nosotros</h1>
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>  
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, sapiente! Molestiae sunt autem, rem nihil distinctio vero consequuntur, dicta veniam perspiciatis reiciendis beatae libero sit! Doloribus aspernatur provident eligendi unde?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus non itaque perspiciatis aperiam, commodi est nostrum fugiat possimus ad error ratione maxime delectus nihil cupiditate. Debitis adipisci ab error iure.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt eos debitis, atque quae tempora hic, ut perferendis, exercitationem nulla iste numquam odio eum sed expedita beatae vel accusantium placeat?</p>
+        <div class="nosotros__principal">
+            <div class="nosotros__texto">  
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, sapiente! Molestiae sunt autem, rem nihil distinctio vero consequuntur, dicta veniam perspiciatis reiciendis beatae libero sit! Doloribus aspernatur provident eligendi unde?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus non itaque perspiciatis aperiam, commodi est nostrum fugiat possimus ad error ratione maxime delectus nihil cupiditate. Debitis adipisci ab error iure.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt eos debitis, atque quae tempora hic, ut perferendis, exercitationem nulla iste numquam odio eum sed expedita beatae vel accusantium placeat?</p>
+            </div>
+            <div class="nosotros__video">
+                <iframe src="https://youtube.com/embed/eVadCFNqbYA" frameborder="0"></iframe>
+            </div>
         </div>
     </section>
 
@@ -85,9 +100,6 @@
             <div class="ellas__yuri">
                 <h3>Yuri</h3>
                 <img src="img/yuri.jpg" alt="maltes">
-            </div>
-            <div class="ellas__video">
-                <iframe src="https://youtube.com/embed/eVadCFNqbYA" frameborder="0"></iframe>
             </div>
         </article>
     </section>

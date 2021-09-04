@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yumo-Soft | Galería</title>
-    <link rel="icon" href="img/dog.png">    
+    <link rel="icon" href="img/dog.png">  
+    
+    <!-- Etiquetas Meta -->
+    <meta name="author" content="Monserrat Sandoval">
+    <meta name="keywords" content="veterinario, mascota, perros, gatos, sistema, veterinaria, testimonios yumo">
+    <meta name="description" content="Yumo-Soft es el sistema que te permite llevar el mejor seguimiento de tu mascota, conoce lo que otras personas opinan">
+
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Letra Chewy para Encabezados -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
@@ -19,18 +26,18 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- Encabezado de la página -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="col-12 col-lg-3 text-center">   
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo2.png" height="60px" alt="logo">
-                        </a>
-                </div>     
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo2.png" height="60px" alt="logo">
+                </a>   
             </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="ham_blanca" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>   
             
@@ -53,45 +60,51 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 col-lg-3 text-center">   
+                <a class="navbar-brand" href="">
+                    <a class="boton-navbar"><i class="fa fa-facebook-square"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-twitter"></i></a>
+                    <a class="boton-navbar"><i class="fa fa-instagram"></i></a>
+                </a>
+            </div>
         </nav>        
     </header>
 
 
     <!-- Sección de Clientes Satisfechos -->
     <section class="galeria"> 
-        <h2>Yumo-Soft</h2> 
         <h1>Clientes Satisfechos</h1>
         <div class="galeria__imagenes">
             <!-- Imagen 1 -->
-            <div class="galeria__imagen">
+            <div class="galeria__imagen" data-aos="flip-right">
                 <img src="img/moca.jpg" alt="">
             </div>
             <!-- Imagen 2 -->
-            <div class="galeria__imagen">
+            <div class="galeria__imagen" data-aos="flip-right">
                 <img src="img/yuri.jpg" alt="">
             </div>
             <!-- Imagen 3 -->
-            <div class="galeria__imagen">
+            <div class="galeria__imagen" data-aos="flip-right">
                 <img src="img/moca.jpg" alt="">
             </div>
             <!-- Imagen 4 -->
-            <div class="galeria__imagen">
+            <div class="galeria__imagen" data-aos="flip-right">
                 <img src="img/yuri.jpg" alt="">
             </div>
             <!-- Imagen 5 -->
-            <div class="galeria__imagen">
+            <div class="galeria__imagen" data-aos="flip-right">
                 <img src="img/moca.jpg" alt="">
             </div>
             <!-- Imagen 6 -->
-            <div class="galeria__imagen">
+            <div class="galeria__imagen" data-aos="flip-right">
                 <img src="img/yuri.jpg" alt="">
             </div>
             <!-- Imagen 7 -->
-            <div class="galeria__imagen">
+            <div class="galeria__imagen" data-aos="flip-right">
                 <img src="img/moca.jpg" alt="">
             </div>
             <!-- Imagen 8 -->
-            <div class="galeria__imagen">
+            <div class="galeria__imagen" data-aos="flip-right">
                 <img src="img/yuri.jpg" alt="">
             </div>
             
@@ -100,21 +113,24 @@
 
     <!-- Sección de testimonios -->
     <section id="testimonios">
-        <h2>Testimonios</h2>
+        <h1>Testimonios</h1>
         <!-- Testimonio 1 -->
         <div class="testimonios">
             <div class="testimonios__cliente1 animate__animated animate__bounce">
                 <h3>Cliente 1</h3>
+                <img src="img/persona1.png" alt="Persona uno">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique eius debitis excepturi, asperiores delectus praesentium facilis nihil alias iure nesciunt temporibus iste accusantium expedita, autem quae, dolores sapiente. Provident, odit?</p>
             </div>
             <!-- Testimonio 2 -->
             <div class="testimonios__cliente2 animate__animated animate__bounce">
                 <h3>Cliente 2</h3>
+                <img src="img/persona2.png" alt="Persona dos">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur possimus perspiciatis neque quisquam iusto ullam, quas distinctio odit facere laudantium soluta iure minima? Doloribus officia nam suscipit aut neque.</p>
             </div>
             <!-- Testimonio 3 -->
             <div class="testimonios__client3 animate__animated animate__bounce">
                 <h3>Cliente 3</h3>
+                <img src="img/persona3.png" alt="Persona tres">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab non possimus ex, error accusamus, soluta corporis eveniet quas nostrum animi similique molestias laudantium eaque fuga, vitae iste quam aut quis.</p>
             </div>
         </div>
@@ -149,5 +165,8 @@
             <p>Todos los derechos reservados. Elaborado por <a href="">Monserrat Sandoval</a></p>
         </div>
     </footer>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
