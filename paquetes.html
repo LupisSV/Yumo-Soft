@@ -27,7 +27,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="col-12 col-lg-3 text-center">   
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="img/logo2.png" height="60px" alt="logo">
                 </a>     
             </div>
@@ -70,51 +70,62 @@
             <div class="paquete__article">
                 <!-- Paquete 1 -->
                 <article id="paquete__paquete1">
-                    <h3>Paquete Perro</h3>
-                    <img src="img/shiba.png" alt="">
-                    <ul class="paquete__huella">
-                        <li>Elemento 1</li>
-                        <li>Elemento 2</li>
-                        <li>Elemento 3</li>
-                        <li>Elemento 4</li>
-                        <li>Elemento 5</li>
-                        <li>Elemento n</li>
-                    </ul>
-                    <span>$0000.00</span>
-                    <br>
-                    <button class="boton boton--naranja">Conoce más</button>
+                    <div class="paquete__contenedor">
+                        <h3>Paquete Perro</h3>
+                        <img src="img/shiba.png" alt="">
+                        <ul class="paquete__huella">
+                            <li>Dominio Personal</li>
+                            <li>Imagen de fondo y logo propio</li>
+                            <li>Registro de mascotas y dueños</li>
+                            <li>Historial avanzado de mascotas</li>
+                            <li>Galería de estética</li>
+                            <li>Impresión de recetas y cartillas</li>
+                            <li>Tienda en línea</li>
+                            <li>Gráficos y reportes estadísticos</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>$0000.00</span>
+                        <button class="boton boton--naranja" data-toggle="modal" data-target="#exampleModal">Conoce más</button>
+                    </div>
                 </article>
                 <!-- Paquete 2 -->
                 <article id="paquete__paquete2">
-                    <h3>Paquete Gato</h3>
-                    <img src="img/cat.png" alt="">
-                    <ul class="paquete__huella">
-                        <li>Elemento 1</li>
-                        <li>Elemento 2</li>
-                        <li>Elemento 3</li>
-                        <li>Elemento 4</li>
-                        <li>Elemento 5</li>
-                        <li>Elemento n</li>
-                    </ul>
-                    <span>$0000.00</span>
-                    <br>
-                    <button class="boton boton--azul">Conoce más</button>
+                    <div class="paquete__contenedor">
+                        <h3>Paquete Gato</h3>
+                        <img src="img/cat.png" alt="">
+                        <ul class="paquete__huella">
+                            <li>Subdominio personal</li>
+                            <li>Imagen de fondo y logo propio</li>
+                            <li>Registro de mascotas y duseños</li>
+                            <li>Creación de agenda</li>
+                            <li>Registro de servicios </li>
+                            <li>Historial simple de mascota</li>
+                            <li>Galería de estética</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>$0000.00</span>
+                        <button class="boton boton--azul" data-toggle="modal" data-target="#exampleModal">Conoce más</button>
+                    </div>                        
                 </article>
                 <!-- Paquete 3 -->
                 <article id="paquete__paquete3">
-                    <h3>Paquete tortuga</h3>
-                    <img src="img/turtle.png" alt="">
-                    <ul class="paquete__huella">
-                        <li>Elemento 1</li>
-                        <li>Elemento 2</li>
-                        <li>Elemento 3</li>
-                        <li>Elemento 4</li>
-                        <li>Elemento 5</li>
-                        <li>Elemento n</li>
-                    </ul>
-                    <span>$0000.00</span>
-                    <br>
-                    <button class="boton boton--rosa">Conoce más</button>
+                    <div class="paquete__contenedor">
+                        <h3>Paquete tortuga</h3>
+                        <img src="img/turtle.png" alt="">
+                        <ul class="paquete__huella">
+                            <li>Subdominio personal</li>
+                            <li>Imagen de fondo y logo propio</li>
+                            <li>Registro de mascotas y dueños</li>
+                            <li>Agenda para citas y vacunas</li>
+                            <li>Historial simple de mascota</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>$0000.00</span>
+                        <button class="boton boton--rosa" data-toggle="modal" data-target="#exampleModal">Conoce más</button>
+                    </div>
                 </article>
             </div>
         </div>
@@ -159,9 +170,25 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div> 
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="max-width: 1200px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img  src="img/paquetes.png" alt="Paquetes Yumo-Soft" width="100%">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Pie de página -->
     <footer class="footer">

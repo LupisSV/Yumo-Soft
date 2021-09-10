@@ -17,7 +17,7 @@
 .paquete__article{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; 
     align-content: space-between;
     justify-content: space-between;
 }
