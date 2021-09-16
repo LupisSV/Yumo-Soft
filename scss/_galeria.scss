@@ -1,6 +1,7 @@
 /* PÁGINA GALERÍA */
 .galeria{
     background-image: linear-gradient(to top, $colorVerde , #d0f5e3);
+    padding:20px 0 20px 0;
  }
 
 .galeria__imagenes{
@@ -14,15 +15,20 @@
 
 .galeria__imagen img{
     width: 100%;
+    border-radius:10px;
 }
 
 /* Sección testimonios */
+
+#testimonios{
+    margin-top: 20px;
+}
 
 .testimonios{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin: 50px; 
+    margin: 30px; 
     text-align: center;
 
     h3{
@@ -37,13 +43,17 @@
 
 }
 
+
+
+.imgRedonda {
+    width:200px;
+    height:200px;
+    border-radius:150px;
+}
+
 .testimonios__cliente1{
     margin: 10px;
-    display: inline-block;
-    margin: 0 0.5rem;
 
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 4s; /* don't forget to set a duration! */
 }
 
 .testimonios__cliente2{

@@ -135,7 +135,8 @@ label {
 
 /* PÁGINA GALERÍA */
 .galeria {
-  background-image: linear-gradient(to top, #3EC483, #d0f5e3); }
+  background-image: linear-gradient(to top, #3EC483, #d0f5e3);
+  padding: 20px 0 20px 0; }
 
 .galeria__imagenes {
   display: grid;
@@ -144,14 +145,18 @@ label {
   margin: 50px; }
 
 .galeria__imagen img {
-  width: 100%; }
+  width: 100%;
+  border-radius: 10px; }
 
 /* Sección testimonios */
+#testimonios {
+  margin-top: 20px; }
+
 .testimonios {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 50px;
+  margin: 30px;
   text-align: center; }
   .testimonios h3 {
     color: #404D95;
@@ -160,14 +165,13 @@ label {
     color: #c69b7c;
     font-weight: bold; }
 
+.imgRedonda {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px; }
+
 .testimonios__cliente1 {
-  margin: 10px;
-  display: inline-block;
-  margin: 0 0.5rem;
-  animation: bounce;
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 4s;
-  /* don't forget to set a duration! */ }
+  margin: 10px; }
 
 .testimonios__cliente2 {
   margin: 10px; }
@@ -233,6 +237,10 @@ label {
   background-color: #ffffdf;
   padding: 20px; }
 
+.contenidoPaquetes--Texto {
+  font-family: "Mali", cursive;
+  font-weight: bold; }
+
 /* Formato de botones */
 .boton, .boton--naranja, .boton--azul, .boton--rosa, .boton-formulario, .boton-navbar {
   color: white;
@@ -285,7 +293,8 @@ label {
 
 .boton-formulario {
   background-color: #FF66C4;
-  border-color: #FF66C4; }
+  border-color: #FF66C4;
+  margin-top: 10px; }
 
 .boton-navbar {
   border-style: none;
@@ -357,11 +366,11 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: center; }
 
 .footer__logo {
   padding-top: 50px;
-  padding-left: 100px;
   padding-bottom: 50px; }
 
 .footer__creditos p {
@@ -410,7 +419,8 @@ footer {
   .slider__texto {
     display: none; }
   .servicio {
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0; }
   .paquete article {
     margin: 0 auto; }
   .paquete__article {
@@ -419,6 +429,8 @@ footer {
     flex-direction: column; }
   .footer__imagen {
     flex-direction: column; }
+  .formulario-bot {
+    margin-top: 20px; }
   .testimonios {
     flex-direction: column; } }
 
