@@ -1,0 +1,18 @@
+/* ------------ SCROLL UP ------------ */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: $colorPrincipal;
+    color: white;
+    padding: 3px 8px !important;
+}
+.back-to-top:hover {
+    border: 5px;
+    border-color: $colorPrincipal;
+    background-color: white;
+    color: $colorPrincipal;
+}
