@@ -14,7 +14,6 @@
 @import "scss/scrollUp";
 
 
-
 /* PROPIEDADES GENERALES */
 h1{
     color: $colorPrincipal;
@@ -88,7 +87,7 @@ footer{
 
 .footer__imagen{
     display: flex;
-    background-image: url(img/pasto.jpg);
+    background-image: url(../img/pasto.jpg);
     background-repeat: no-repeat ;
     background-size: cover;
     flex-direction: row;
@@ -118,7 +117,7 @@ footer{
 }
 
 .footer__menu ul{
-    list-style-image: url(img/paw.png);
+    list-style-image: url(../img/paw.png);
 }
 
 .footer__menu ul li a{
@@ -195,7 +194,7 @@ footer{
 @media only screen and (min-width: 768px){
 
     .paquete__huella{
-        list-style-image: url(img/paw.png);
+        list-style-image: url(../img/paw.png);
     }
 
     .contacto__general div{

@@ -5,7 +5,7 @@
 
 /* Sección de valores */
 .valores {
-  background-image: url(img/fondo_valores.jpg); }
+  background-image: url(../img/fondo_valores.jpg); }
 
 .valores_general {
   background-color: rgba(255, 255, 255, 0.8); }
@@ -380,7 +380,7 @@ footer {
 
 .footer__imagen {
   display: flex;
-  background-image: url(img/pasto.jpg);
+  background-image: url(../img/pasto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: row;
@@ -405,7 +405,7 @@ footer {
   padding: 45px; }
 
 .footer__menu ul {
-  list-style-image: url(img/paw.png); }
+  list-style-image: url(../img/paw.png); }
 
 .footer__menu ul li a {
   color: #404D95;
@@ -454,6 +454,6 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .paquete__huella {
-    list-style-image: url(img/paw.png); }
+    list-style-image: url(../img/paw.png); }
   .contacto__general div {
     padding: 10px; } }
