@@ -166,14 +166,16 @@ label {
   display: none; }
 
 .galeria__imagen:hover > img {
-  opacity: 0.4; }
+  opacity: 0.4;
+  cursor: pointer; }
 
 .galeria__imagen:hover > div {
   display: block;
   font-family: "Chewy", cursive;
   font-size: 40px;
   color: #7a185d;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .imgRedonda {
   width: 200px;
