@@ -457,6 +457,8 @@ footer {
     flex-direction: column; }
   .footer__imagen {
     flex-direction: column; }
+  .formulario {
+    margin-top: 20px; }
   .formulario-bot {
     margin-top: 20px; }
   .testimonios {
