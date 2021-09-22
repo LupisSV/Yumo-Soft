@@ -43,7 +43,25 @@
 
 }
 
+.galeria__imagen > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
 
+.galeria__imagen:hover > img {
+    opacity: 0.4;
+}
+
+.galeria__imagen:hover > div{
+    display: block;
+    font-family: $letraPrincipal;
+    font-size: 40px;
+    color: $colorBotonHR;
+    text-align: center;
+}
 
 .imgRedonda {
     width:200px;
@@ -63,3 +81,6 @@
 .testimonios__cliente3{
     margin: 10px;
 }
+
+
+
