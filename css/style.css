@@ -435,6 +435,9 @@ footer {
 #ham_blanca {
   color: white; }
 
+#mdl-grande {
+  max-width: 1200px; }
+
 @media screen and (max-width: 1279px) {
   .navbar {
     justify-content: center; } }
