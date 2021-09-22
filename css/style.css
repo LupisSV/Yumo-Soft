@@ -78,6 +78,9 @@ label {
   color: #c69b7c;
   font-family: 'Arimo', sans-serif; }
 
+.contacto__input {
+  font-family: "Mali", cursive; }
+
 /* PÁGINA NOSOTROS */
 .nosotros {
   padding: 30px;
